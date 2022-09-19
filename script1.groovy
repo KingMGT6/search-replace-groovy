@@ -7,7 +7,7 @@ class Accn{
         {
             def dt = new Date()
             def sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
-            def strt = sdf.format(dt)
+            def strt = sdf.format(dt) //start date for logs
             def listfilename = [] //declare list
 
             //enter directory path
@@ -61,10 +61,11 @@ class Accn{
             else {print "$text not found!"} //if no text found
 
         
-            def enDs = sdf.format(dt)
+            def enDs = sdf.format(dt) //end date for logs
         
+            //logs
             Logger logger = Logger.getLogger("")
-            logger.info ("Start: $strt\nDirectory: $path\nSearched text: $text\nReplaced by: $reptext\nBackup: $bupath\nEnd: $enDs") //logs
+            logger.info ("Start: $strt\nDirectory: $path\nSearched text: $text\nReplaced by: $reptext\nBackup: $bupath\nEnd: $enDs")
 
         }
         catch(Exception ex) //catch error

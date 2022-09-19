@@ -1,0 +1,19 @@
+How to run it:
+
+1.	Run the program
+- > groovy .\script1.groovy
+
+2.	Enter a directory path
+- > ex. D:\Systems\Groovy\ACCN1\TestFolder
+
+3.	Search the text/word you want to replace.
+- > ex. test
+
+4.	Enter the text/word that will replace the searched text/word.
+- > ex. keyword
+
+5.	Enter a directory to back up the files before replacing.
+- > ex. D:\Systems\Groovy\ACCN1\bufolder
+
+6.	A confirmation message will show that the searched text was replaced and will ask if you want to show the files that has been updated/affected.
+7.	Type “Y” or “y” to show affected/updated files.
